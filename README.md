@@ -6,7 +6,7 @@ This is a Next.js based NFT gallery that utilizes the Alchemy NFT API for displa
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/chefleo/Nft_gallery`
+1. Clone the repository: `git clone https://github.com/CoCo-27/NFT_Maketplace`
 2. Install dependencies: `npm install` or `yarn install`
 3. Create an account and get an API key from [Alchemy](https://alchemy.daostack.io/)
 4. Create a `.env` file in the root of the project and add the following environment variables:
