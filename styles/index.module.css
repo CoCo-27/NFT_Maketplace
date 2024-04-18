@@ -1,0 +1,116 @@
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    row-gap: 0.75rem;
+}
+
+.container {
+    width: 100%;
+    row-gap: 0.5rem;
+}
+
+.container > div {
+    width: 100%;
+}
+
+.container > div > div {
+    width: 100%;
+    padding-left: auto; 
+    padding-right: auto; 
+}
+
+.container > div > div > p { 
+    color: #FEDA04;
+    padding-bottom: 0.5rem;
+}
+
+.container > div > div > input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    color: #1F2937; 
+    border-radius: 0.5rem; 
+    width: 80%;
+    background-color: rgb(241 245 249)
+}
+
+.container > div > div > input:disabled {
+    opacity: 0.6;
+}
+
+.container > div > div > input:focus {
+    outline-color: #93c5fd;
+}
+
+.container > label {
+    color: white;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.container > label > input {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    color: #FEDA04;
+    background-color: rgb(243 244 246);
+    border-color: rgb(209 213 219);
+    border-radius: 0.25rem;
+}
+
+.container > button {
+    font-weight: 700;
+    color: black;
+    background-color: #FEDA04;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.75rem;
+    border-radius: 0.125rem;
+    width: 20%;
+}
+
+.container > button:hover {
+    transform: scale(1.05, 1.05);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);    
+    transition-duration: 700ms;
+}
+
+.gridContainerNFT {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row dense;
+    row-gap: 3rem;
+    margin-top: 1rem;
+    width: 83.3%;
+    column-gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .gridContainerNFT {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridContainerNFT {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
